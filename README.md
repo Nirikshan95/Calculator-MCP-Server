@@ -1,4 +1,4 @@
-# Dummy MCP Server
+# Calculator MCP Server
 
 A simple Model Context Protocol (MCP) server built with FastMCP that provides basic calculator tools.
 
