@@ -2,6 +2,26 @@
 
 A simple Model Context Protocol (MCP) server built with FastMCP that provides basic calculator tools.
 
+## Remote Access
+
+You can access this MCP server remotely at: **https://calculator-mk.fastmcp.app/mcp**
+
+## Using with Claude Desktop or Other Applications
+
+To use this MCP server with Claude Desktop or any other MCP-compatible application:
+
+1. Configure your MCP client to connect to the remote URL: `https://calculator-mk.fastmcp.app/mcp`
+2. Once connected, you can use calculator functions directly in your conversations:
+   - Ask Claude to "add 10 and 5" 
+   - Request calculations like "multiply 25 by 4"
+   - Perform complex math operations through natural language
+
+The server supports the following calculator operations:
+- Addition (`add`)
+- Subtraction (`subtract`)
+- Multiplication (`multiply`)
+- Division (`divide`) - Includes zero division protection
+
 ## Features
 
 This MCP server exposes the following calculator tools:
@@ -10,31 +30,6 @@ This MCP server exposes the following calculator tools:
 - **subtract**: Subtracts two integers
 - **multiply**: Multiplies two integers
 - **divide**: Divides two integers (with zero division check)
-
-## Installation
-
-1. Clone or download this repository.
-2. Install the required dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-   Or directly:
-
-   ```bash
-   pip install fastmcp
-   ```
-
-## Usage
-
-Run the server:
-
-```bash
-python dummy_MCP.py
-```
-
-The server will start on `http://0.0.0.0:8000`.
 
 ## API Tools
 
